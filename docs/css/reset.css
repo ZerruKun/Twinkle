@@ -1,0 +1,32 @@
+/*https://snipp.ru/html-css/css-reset*/
+
+html, body, div, span, h1, h2, h3, p, a, img, ol, ul, li,
+table, tr, th, td, article, footer, header, nav {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, footer, header, nav, section {
+	display: block;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
