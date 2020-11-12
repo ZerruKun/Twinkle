@@ -1,0 +1,73 @@
+/*
+Смартфон - https://wireframe.cc/w0U6zD
+ПК -https://wireframe.cc/t08bLc
+*/
+
+/* Общее */
+
+html, body, div, span, h1, h2, h3, p, a, img, ol, ul, li,
+table, tr, th, td, article, footer, header, nav, section {
+    box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  max-width: 980px;
+  color: #000000;
+  font-size: 1em;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  cursor: default;
+  outline: none;
+}
+
+a:visited {
+  color: #000000;
+}
+
+
+p {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  text-align: justify;
+  text-indent: 0.5em;
+}
+
+h1 {
+  margin-top: 1em;
+  font-size: 2.5em;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.visual-hidden {
+  display: none;
+}
