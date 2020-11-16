@@ -85,7 +85,7 @@ h2 {
   text-align: center;
 }
 
-img {
+.text-img {
   display:block;
   margin-left: auto;
   margin-right: auto;
@@ -93,6 +93,27 @@ img {
   height: auto;
   max-width: 600px;
   max-height: 600px;
+}
+
+.text-img[tabindex="0"] {
+  cursor: zoom-in;
+}
+
+.text-img[tabindex="0"]:focus {
+  position: fixed; z-index: 10;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: auto; max-width: 100%;
+  height: auto; max-height: 100%;
+  margin: auto;
+  box-shadow: 0 0 200px #000, 0 0 0 1000px rgba(0,0,0,.3);
+-webkit-box-shadow: 0 0 200px #000, 0 0 0 1000px rgba(0,0,0,.3);
+-moz-box-shadow: 0 0 200px #000, 0 0 0 1000px rgba(0,0,0,.3);
+}
+
+.text-img[tabindex="0"]:focus, /* Привязка на возврат фото в привычное состояние после клика на увеличенное */
+.text-img[tabindex="0"]:focus ~ * {  
+  cursor: zoom-out;
+  pointer-events: none;
 }
 
 .paw {
