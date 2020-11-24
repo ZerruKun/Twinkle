@@ -82,8 +82,17 @@ h2 {
   text-align: center;
 }
 
+.visual-hidden {
+  display: none;
+}
+
+.donttouch {
+  pointer-events: none;
+}
+
 .text-img {
-  display:block;
+  display: block;
+  cursor: zoom-in;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -92,11 +101,7 @@ h2 {
   max-height: 700px;
 }
 
-.text-img {
-  cursor: zoom-in;
-}
-
-.text-img-focus {
+.text-img-zoom {
   position: fixed;
   top: 0;
   left: 0;
@@ -108,6 +113,7 @@ h2 {
   max-height: 100%;
   margin: auto;
   box-shadow: 0 0 200px #000, 0 0 0 1000px rgba(0,0,0,.3);
+  cursor: zoom-out;
 }
 
 .paws {
